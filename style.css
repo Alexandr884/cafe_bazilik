@@ -25,7 +25,6 @@ header {
     justify-content: space-between;
     padding: 5px;
     z-index: 9999;
-
 }
 
 .container {
@@ -182,14 +181,16 @@ footer.footer {
     bottom: 0px;
     left: 0;
     width: 100%;
-   display: flex;
+    display: flex;
     justify-content: space-around;
     padding: 20px;
 
 }
-.footer-left{
+
+.footer-left {
     padding: 10px;
 }
-.footer-right{
+
+.footer-right {
     padding: 10px;
 }

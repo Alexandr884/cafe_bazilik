@@ -27,28 +27,28 @@
         </p>
     </header>
     <div class="main">
-    <div class="container1">
-        <div class="button_booking">
-            <button class="btn">Забронировать стол</button>
-        </div>
-        <div class="rest_text">
-            <p>Vысота 22 - это ресторанный комплекс, состоящий из трех этажей, на каждом из которых создана своя
-                атмосфера!</p>
-            <p>У каждого зала своя история и настроение, которые подойдут для проведения любого мероприятия!</p>
-        </div>
-        <div class="heading">
-            <img src="assets/bazilik.png">
-        </div>
-        <div>
-            <img class="interior1" src="Assets/interior_cafe.jpg">
+        <div class="container1">
+            <div class="button_booking">
+                <button class="btn">Забронировать стол</button>
+            </div>
+            <div class="rest_text">
+                <p>Vысота 22 - это ресторанный комплекс, состоящий из трех этажей, на каждом из которых создана своя
+                    атмосфера!</p>
+                <p>У каждого зала своя история и настроение, которые подойдут для проведения любого мероприятия!</p>
+            </div>
+            <div class="heading">
+                <img src="assets/bazilik.png">
+            </div>
             <div>
-                <img class="interior2" src="Assets/interior.jpg">
+                <img class="interior1" src="Assets/interior_cafe.jpg">
                 <div>
-                    <img class="interior3" src="Assets/tea_set.jpg">
+                    <img class="interior2" src="Assets/interior.jpg">
+                    <div>
+                        <img class="interior3" src="Assets/tea_set.jpg">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <div class="controls">
         <img src="assets/right.png" id="rightBtn">
@@ -64,25 +64,11 @@
                 <span><img src="assets/slider_3.jpg"></span>
             </div>
         </div>
-    <img src="assets/left.png" id="leftBtn">
+        <img src="assets/left.png" id="leftBtn">
     </div>
-    <script>
-        let horizontScroll = document.querySelector('.container2');
-        let leftBtn = document.getElementById('leftBtn');
-        let rightBtn = document.getElementById('rightBtn');
-        rightBtn.addEventListener('click', ()=>{
-            horizontScroll.style.scrollBehavior = "smooth"
-            horizontScroll.scrollLeft +=900;
 
-        });
-        leftBtn.addEventListener('click', ()=>{
-             horizontScroll.style.scrollBehavior = "smooth"
-            horizontScroll.scrollLeft -=900;
-            
-        });
-    </script>
-     </div>
-     <footer class="footer">
+    </div>
+    <footer class="footer">
         <div class="footer-left">
             <h2>Часы работы</h2>
             <p>Ежедневно 12:00-23:00 </p>
@@ -92,6 +78,21 @@
             <p>+7 (987)254-79-48</p>
         </div>
     </footer>
+    <script>
+        let horizontScroll = document.querySelector('.container2');
+        let leftBtn = document.getElementById('leftBtn');
+        let rightBtn = document.getElementById('rightBtn');
+        rightBtn.addEventListener('click', () => {
+            horizontScroll.style.scrollBehavior = "smooth"
+            horizontScroll.scrollLeft += 900;
+
+        });
+        leftBtn.addEventListener('click', () => {
+            horizontScroll.style.scrollBehavior = "smooth"
+            horizontScroll.scrollLeft -= 900;
+
+        });
+    </script>
 </body>
 
 </html>
