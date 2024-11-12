@@ -1,0 +1,195 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+header {
+    background-color: rgba(248, 241, 241, 0.807);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    z-index: 9999;
+
+}
+
+.container {
+    width: 100%;
+
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+}
+
+.navi_link {
+
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.header_navi {
+    margin-left: auto;
+}
+
+
+.logo img {
+    height: 60px;
+    width: 150px;
+    display: inline-block;
+
+}
+
+.container1 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.interior1 {
+    position: relative;
+    width: 250px;
+    bottom: 300px;
+    left: 100px;
+}
+
+.interior2 {
+    position: relative;
+    bottom: 500px;
+    width: 200px;
+    height: 150px;
+    left: 300px;
+}
+
+.interior3 {
+    position: relative;
+    bottom: 500px;
+    width: 200px;
+    height: 200px;
+    left: 250px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container2 {
+    background-color: rgb(220, 51, 138);
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.container2::-webkit-scrollbar {
+    display: none;
+}
+
+.container2 .gallery {
+    width: 100%;
+    display: flex;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    flex: none;
+
+}
+
+.container2 .gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+}
+
+.controls #rightBtn {
+    width: 78px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.controls #leftBtn {
+    width: 78px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: blueviolet;
+}
+
+.heading img {
+    position: relative;
+    bottom: 160px;
+    left: 800px;
+    width: 240px;
+}
+
+.rest_text {
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    width: 600px;
+    height: 200px;
+    top: 150px;
+    left: 650px;
+
+}
+
+.button_booking {
+    position: relative;
+    left: 854px;
+    top: 380px;
+    width: 180px
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 18px;
+    font-size: 14px;
+    background-color: aquamarine;
+    border: 1px solid rgb(3, 27, 19);
+    border-radius: 25px;
+    user-select: none;
+    cursor: pointer;
+}
+
+footer.footer {
+    position: static;
+    background-color: rgba(215, 197, 197, 0.566);
+    height: 100px;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+   display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+.footer-left{
+    padding: 10px;
+}
+.footer-right{
+    padding: 10px;
+}
