@@ -1,5 +1,6 @@
-html {
-    height: 100%;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
 .main {
     flex-grow: 1;
 }
+
 
 header {
     background-color: rgba(248, 241, 241, 0.807);
@@ -193,4 +195,47 @@ footer.footer {
 
 .footer-right {
     padding: 10px;
+}
+
+.container-map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+}
+
+.container-info {
+    width: 350px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.contact {
+    padding-left: 20px;
+}
+
+.address {
+    position: relative;
+    top: 70px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.time-work {
+    position: relative;
+    top: 90px;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+.number {
+    position: relative;
+    top: 120px;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+.number a {
+    color: red;
 }
