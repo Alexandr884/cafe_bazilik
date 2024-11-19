@@ -20,36 +20,39 @@
                 <a href="#" class="navi_link">Меню</a>
                 <a href="#" class="navi_link">Интерьер</a>
                 <a href="#" class="navi_link">Банкеты</a>
-                <a href="#" class="navi_link">Контакты</a>
+                <a href="#contact" class="navi_link">Контакты</a>
 
             </nav>
         </div>
         </p>
     </header>
-    <div class="main">
-        <div class="container1">
-            <div class="button_booking">
-                <button class="btn">Забронировать стол</button>
-            </div>
-            <div class="rest_text">
-                <p>Vысота 22 - это ресторанный комплекс, состоящий из трех этажей, на каждом из которых создана своя
-                    атмосфера!</p>
-                <p>У каждого зала своя история и настроение, которые подойдут для проведения любого мероприятия!</p>
-            </div>
-            <div class="heading">
-                <img src="assets/bazilik.png">
-            </div>
-            <div>
-                <img class="interior1" src="Assets/interior_cafe.jpg">
-                <div>
-                    <img class="interior2" src="Assets/interior.jpg">
-                    <div>
-                        <img class="interior3" src="Assets/tea_set.jpg">
-                    </div>
+    <div class="conteiner-section1">
+        <div class="img-interior">
+            <img class="interior1" src="Assets/interior_cafe.jpg">
+            <img class="interior2" src="Assets/interior.jpg">
+            <img class="interior3" src="Assets/tea_set.jpg">
+        </div>
+        <div class="iinformation-about-us">
+            <div class="container-info-about-us">
+                <div class="heading">
+                    <img src="assets/bazilik.png">
+                </div>
+
+                <div class="rest-text">
+                    <p>Vысота 22 - это ресторанный комплекс, состоящий из трех <br>этажей, на каждом из которых создана
+                        своя
+                        атмосфера!</p>
+                    <p><br>У каждого зала своя история и настроение, которые подойдут для проведения любого
+                        мероприятия!
+                    </p>
+                </div>
+                <div class="button_booking">
+                    <button class="btn">Забронировать стол</button>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="controls">
         <img src="assets/right.png" id="rightBtn">
         <div class="container2">
@@ -72,7 +75,7 @@
         <script class="map" type="text/javascript" charset="utf-8" async
             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9355e3eb95472f644aeeb9c6bb26ab09cbcf6c6078de5cd4760c253d9498a347&amp;width=792&amp;height=462&amp;lang=ru_RU&amp;scroll=true"></script>
         <div class="container-info">
-            <div class="contact">
+            <div id="contact" class="contact">
                 <h1>КОНТАКТЫ</h1>
             </div>
             <div class="address">
@@ -110,12 +113,12 @@
         let rightBtn = document.getElementById('rightBtn');
         rightBtn.addEventListener('click', () => {
             horizontScroll.style.scrollBehavior = "smooth"
-            horizontScroll.scrollLeft += 900;
+            horizontScroll.scrollLeft -= 900;
 
         });
         leftBtn.addEventListener('click', () => {
             horizontScroll.style.scrollBehavior = "smooth"
-            horizontScroll.scrollLeft -= 900;
+            horizontScroll.scrollLeft += 900;
 
         });
     </script>
