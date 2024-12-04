@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -12,32 +12,28 @@
     <header>
         <p>
         <div class="container header_container">
-            <a href="/" class="logo">
-                <img src="assets/bazilik.png" alt="logo" width="150px">
-            </a>
+            <img src="assets/bazilik.png" alt="logo" width="150px">
             <nav class="navi header_navi">
                 <a href="#" class="navi_link">О нас</a>
                 <a href="#" class="navi_link">Меню</a>
                 <a href="#" class="navi_link">Интерьер</a>
                 <a href="#" class="navi_link">Банкеты</a>
                 <a href="#contact" class="navi_link">Контакты</a>
-
             </nav>
         </div>
         </p>
     </header>
-    <div class="conteiner-section1">
+    <div class="conteiner">
         <div class="img-interior">
             <img class="interior1" src="Assets/interior_cafe.jpg">
             <img class="interior2" src="Assets/interior.jpg">
             <img class="interior3" src="Assets/tea_set.jpg">
         </div>
-        <div class="iinformation-about-us">
+        <div class="information-about-us">
             <div class="container-info-about-us">
                 <div class="heading">
                     <img src="assets/bazilik.png">
                 </div>
-
                 <div class="rest-text">
                     <p>Vысота 22 - это ресторанный комплекс, состоящий из трех <br>этажей, на каждом из которых
                         создана
@@ -49,29 +45,25 @@
                 </div>
                 <div class="button_booking">
                     <button class="btn">Забронировать стол</button>
-
                 </div>
             </div>
         </div>
     </div>
-
     <div class="controls">
         <img src="assets/right.png" id="rightBtn">
-        <div class="container2">
+        <div class="container-gallery">
             <div class="gallery">
                 <span><img src="assets/slider_1.jpg"></span>
             </div>
             <div class="gallery">
                 <span><img src="assets/slider_2.jpg"></span>
             </div>
-
             <div class="gallery">
                 <span><img src="assets/slider_3.jpg"></span>
             </div>
         </div>
         <img src="assets/left.png" id="leftBtn">
     </div>
-
     </div>
     <div class="container-map">
         <script class="map" type="text/javascript" charset="utf-8" async
@@ -83,7 +75,6 @@
             <div class="address">
                 <p>Русторанный комплекс "Vысота"</p>
                 <p> Уфа, Менделеева 160/9</p>
-
             </div>
             <div class="time-work">
                 <p>вс - чт: 12:00 - 24:00</p>
@@ -110,7 +101,7 @@
         </div>
     </footer>
     <script>
-        let horizontScroll = document.querySelector('.container2');
+        let horizontScroll = document.querySelector('.container-gallery');
         let leftBtn = document.getElementById('leftBtn');
         let rightBtn = document.getElementById('rightBtn');
         rightBtn.addEventListener('click', () => {
