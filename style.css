@@ -242,4 +242,16 @@ footer.footer {
     color: red;
 }
 
+.logo-WhatsApp {
+    position: fixed;
+    padding-left: 1200px;
+    padding-top: 450px;
+
+}
+
+.img-WhatsApp {
+    width: 60px;
+
+}
+
 @media screen and (max-width:1210px) {}
