@@ -1,8 +1,13 @@
+.html {
+    background-color: aqua;
+}
+
 .body {
     margin: 0;
     display: table;
     min-height: 100vh;
     width: 100%;
+
 }
 
 .main {
@@ -18,19 +23,17 @@
 
 
 header {
-    background-color: rgba(213, 226, 225, 0.872);
+    background-color: #0dcaf0;
     position: static;
     align-content: center;
     z-index: 50;
     height: 80px;
-
 }
 
 
 
 .header_logo {
     position: relative;
-
 }
 
 
@@ -39,10 +42,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-content: center;
-
-
-
-
 }
 
 .burger_menu {
@@ -51,13 +50,11 @@ header {
 }
 
 .navi_link {
-
     display: flex;
     margin: 10px 20px 0px 0px;
     text-decoration: none;
     color: black;
     font-weight: 500;
-
 }
 
 
@@ -71,7 +68,6 @@ header {
     width: 30px;
     height: 18px;
     margin: 14px 0px 0px 0px;
-
 }
 
 .burger span {
@@ -79,7 +75,6 @@ header {
     width: 100%;
     height: 3px;
     transform: scale(1);
-
 }
 
 .burger::before,
@@ -94,7 +89,6 @@ header {
 
 .burger::before {
     top: 0;
-
 }
 
 .burger::after {
@@ -109,13 +103,11 @@ header {
 .burger.active::before {
     top: 50%;
     transform: rotate(-45deg) translate(0, -50%);
-
 }
 
 .burger.active::after {
     bottom: 50%;
     transform: rotate(45deg) translate(0, 50%);
-
 }
 
 @media (max-width:850px) {
@@ -138,8 +130,6 @@ header {
         padding: 60px 20px;
         background-color: rgb(213, 226, 225);
         animation: burgerAnimation 0.8s;
-
-
     }
 
     @keyframes burgerAnimation {
@@ -151,7 +141,6 @@ header {
             opacity: 1;
         }
     }
-
 }
 
 @media (max-width:1320px) {
@@ -176,6 +165,7 @@ header {
     right: 0;
     padding: 0;
     width: 100%;
+
 }
 
 .my-carousel {
@@ -185,28 +175,112 @@ header {
 .carousel-inner {
     background-color: rgb(213, 226, 225);
     width: 300px;
-
 }
 
-
-
-
 .my-carousel .carousel-item {
-
     max-height: 500px;
     max-width: 300px;
-
-
-
 }
 
 .my-carousel .carousel-item img {
     object-fit: cover;
 }
 
-.navi_link_menu {
+.interior-carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    height: 500px;
+}
 
+.interior-carousel .carousel-inner {
+    background-color: rgb(213, 226, 225);
+    width: 300px;
+    height: 100%;
+}
+
+.interior-carousel .carousel-item {
+    display: flex;
+    max-height: 500px;
+    max-width: 300px;
+
+}
+
+.interior-carousel .carousel-item img {
+    width: auto;
+    object-fit: cover;
+    height: 500px;
+}
+
+
+
+.navi_link_menu {
     text-decoration: none;
     color: black;
     font-weight: 500;
+}
+
+.logo_about_us {
+    object-fit: cover;
+    display: grid;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_about_us p {
+    display: flex;
+    text-align: center;
+    width: 550px;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #0a0a0a;
+    font-weight: 400;
+    font-family: 'Jost';
+}
+
+.img_logo_about_us {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo_about_us button {
+    width: 250px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #033047;
+    border: 1px solid #033047;
+    background-color: #ffffff;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    font-family: Jost;
+    font-weight: 500;
+}
+
+
+@media (max-width:1200px) {
+    .about_us {
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo_about_us {
+        object-fit: cover;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.map-section {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 80px;
 }
